@@ -45,7 +45,9 @@ header {
     background-color: transparent;
 } 
 
-.search-bar > button:hover {
+.search-bar > button:hover, .featured-section button:hover, .categories-section button:hover,
+.social-icons a:hover, .header-container-1 button:hover {
+    cursor: pointer;
     transition: transform 0.3s ease;
     transform: scale(1.1);
 }
@@ -81,6 +83,7 @@ header {
     height: 80px;
     padding: 6rem 1rem;
     background-color: #3F51B5;
+    width: 100%;
 }
 
 .logo-container {
@@ -96,16 +99,11 @@ header {
     height: 100%;
 }
 
-.header-container-1 a {
-    text-decoration: none;
+.header-container-1 > button {
+    border: none;
+    background-color: inherit;
     color: white;
-}
-
-.header-container-1 a:hover {
-    background-color: hsl(201, 11%, 66%);
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    transform: scale(1.1);
+    font-size: 1rem;
 }
 
 .nav-menu {
@@ -164,11 +162,6 @@ nav a:hover {
     font-size: clamp(0.65rem, 3vw, 1rem);
     white-space: nowrap;
     cursor: pointer;
-}
-
-.featured-section button:hover, .categories-section button:hover {
-    transition: transform 0.3s ease;
-    transform: scale(1.1);
 }
 
 .books-container {
