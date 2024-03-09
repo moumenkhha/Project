@@ -1,0 +1,74 @@
+[
+    {
+        "title": "matlab programming for biomedical engineers and scientists",
+        "authors": ["andrew king", "paul aljabar"],
+        "isbn": "978-0-12-812203-7",
+        "publisher": "academic press",
+        "publish-year": "2017",
+        "genre": "academic",
+        "description": "matlab programming for biomedical engineers and scientists provides an easy-to-learn introduction to the fundamentals of computer programming in matlab. this book explains the principles of good programming practice, while demonstrating how to write efficient and robust code that analyzes and visualizes biomedical data. aimed at the biomedical engineer, biomedical scientist, and medical researcher with little or no computer programming experience, it is an excellent resource for learning the principles and practice of computer programming using matlab. this book enables the reader to: analyze problems and apply structured design methods to produce elegant, efficient and well-structuredïå½program designsimplement a structured program design in matlab, making good use of incremental development approacheswrite code that makes good use of matlab programming features, including control structures, functions and advanced data typeswrite matlab code to read in medical data from files and write data to fileswrite matlab code that is efficient and robust to errors in input datawrite matlab code to analyze and visualize medical data, including imaging data.",
+        "cover-image": "matlab-programming-for-biomedical-engineers-and-scientists.jpg",
+        "price": 250,
+        "keywords": ["matlab", "programming", "biomedical", "engineer", "scientist"]
+    },
+    {
+        "title": "java design patterns",
+        "authors": ["vaskaran sarcar"],
+        "isbn": "978-1-4842-1802-0",
+        "publisher": "apress berkeley",
+        "publish-year": "2015",
+        "genre": "academic",
+        "description": "learn how to implement design patterns in java: each pattern in java design patterns is a complete implementation and the output is generated using eclipse, making the code accessible to all. the examples are chosen so you will be able to absorb the core concepts easily and quickly. this book presents the topic of design patterns in java in such a way that anyone can grasp the idea. by giving easy to follow examples, you will understand the concepts with increasing depth. the examples presented are straightforward and the topic is presented in a concise manner.",
+        "cover-image": "java-design-patterns.jpg",
+        "price": 189,
+        "keywords": ["java", "design", "pattern", "code"]
+    },
+    {
+        "title": "programming in two semesters using python and java",
+        "authors": ["quentin charatan", "aaron kans"],
+        "isbn": "978-3-031-01326-3",
+        "publisher": "springer cham",
+        "publish-year": "2022",
+        "genre": "academic",
+        "description": "this highly accessible textbook teaches programming from first principles. in common with many programming courses, it uses python as the introductory programming language before going on to use java as the vehicle for more advanced programming concepts. the first part, which teaches python, covers fundamental programming concepts, such as data types and control structures and functions. it introduces more complex data types such as lists and dictionaries and also deals with file handling. it introduces object-oriented concepts and ends with a case study bringing together all the topics of the first semester.  the second part uses java to teach advanced concepts and centres around object-oriented programming, teaching key object-oriented concepts such as inheritance and polymorphism.  the semester again ends with an advanced case study bringing together all the topics of the second semester.",
+        "cover-image": "programming-in-two-semesters-using-python-and-java.jpg",
+        "price": 320,
+        "keywords": ["programming", "python", "java", "programming language"]
+    },
+    {
+        "title": "javascript object programming",
+        "authors": ["martin rinehart"],
+        "isbn": "978-1-4842-1787-0",
+        "publisher": "apress berkeley",
+        "publish-year": "2015",
+        "genre": "academic",
+        "description": "this brief  book explains the advantages of the object model, inheritance, both classical and prototypical, and shows how these concepts can be implemented in javascript. it also shows how object programming (op) opens a new world of design possibilities that go far beyond inheritance.",
+        "cover-image": "javascript-object-programming.jpg",
+        "price": 99,
+        "keywords": ["javascript", "programming", "oo", "web development", "constructor"]
+    },
+    {
+        "title": "css for windows 8 app development",
+        "authors": ["jeremy foster"],
+        "isbn": "978-1-4302-4984-9",
+        "publisher": "apress berkeley",
+        "publish-year": "2013",
+        "genre": "academic",
+        "description": "css for windows 8 app development is your learning guide for css – the language of great windows 8-style apps. learn the built-in styles that make the built-in controls shine, how to define them, and how to use css to give your custom app assets that beautiful modern ui style. css (cascading style sheets) is the clear standard for styling web applications, and with html, css, and javascript now powering apps on windows 8, it’s the clear standard there as well. css is a powerful styling and layout language that greatly simplifies the selection of page elements and their visual display, layout, and animation. additionally, windows 8 apps appear on a large variety of screen formats, and css is the primary means for uniquely defining these layouts.",
+        "cover-image": "css-for-windows-8-app-development.jpg",
+        "price": 360,
+        "keywords": ["css", "app development", "windows", "styling", "html"]
+    },
+    {
+        "title": "",
+        "authors": [],
+        "isbn": "",
+        "publisher": "",
+        "publish-year": "",
+        "genre": "",
+        "description": "",
+        "cover-image": "",
+        "price": "",
+        "keywords": []
+    }
+]
