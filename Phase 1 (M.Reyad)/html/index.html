@@ -19,7 +19,11 @@
                 <div class="header-container-1">
                     <form class="search-bar">
                         <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        <input type="search" placeholder="Search...">
+                        <input type="search" id="search-form" placeholder="Enter key words..." autocomplete="off">
+                        <div id="search-suggestions">
+                            <ul id="suggestions-list">
+                            </ul>
+                        </div>
                     </form>
                     <button class="login">
                         <div class="login-icon">
@@ -39,7 +43,7 @@
                 </div>
                 <nav>
                     <ul class="nav-menu">
-                        <a href="#">Home</a>
+                        <a href="index.html">Home</a>
                         <div class="separator">|</div>
                         <a href="#">FAQ</a>
                         <div class="separator">|</div>
@@ -76,8 +80,8 @@
                         <button type="button">Explore now</button>
                     </article>
                     <article class="category-3">
-                        <span><b>Science fiction books</b></span>
-                        <img src="../images/science-fiction.jpg" alt="Science fiction books" width="300" height="169">
+                        <span><b>Biography books</b></span>
+                        <img src="../images/biography.avif" alt="biography books" width="300" height="169">
                         <button type="button">Explore now</button>
                     </article>
                 </section>
@@ -108,6 +112,6 @@
                 <p>Copyright &copy; 2024. Al-Waha Bookstore. All Rights Reserved.</p>
             </footer>
         </div>
-        <script src="index.js"></script>
+        <script src="../js/index.js"></script>
     </body>
 </html>
