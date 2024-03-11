@@ -57,10 +57,15 @@ const addToCart = (product_id) => {
             quantity: 1
         });
     } else {    // The item is already exist 
-        carts[positionThisProductInCart].quantity += 1; // Increase its quantity by 1
+        carts[positionThisProductInCart].quantity++; // Increase its quantity by 1
     }
+
+    // If Cookie is used:
+    // let timeSave = "expires=Thu, 31 Dec 2025 23:59:59 UTC";
+    // document.cookie = "listCart="+JSON.stringify(carts)+"; "+timeSave+"; path=/;";
+
     addCartToHTML();    // Display shopping cart to the screen
-    addCartToMemory();  // Saving data
+    addCartToMemory();  // Saving data on localStorage
 }
 const addCartToMemory = () => {
     localStorage.setItem('cart', JSON.stringify(carts));    //JSON.stringify because Local storage does not store as arrays, so converting to json
@@ -135,6 +140,7 @@ const initApp = () => {
         .then(response => response.json())
         .then(data => {
             listProducts = data;
+
             addDataToHTML();    // Display data on the screen
 
             //Get cart from memory
@@ -143,7 +149,6 @@ const initApp = () => {
                 addCartToHTML();
             }
 
-
         })
 }
-initApp();
+initApp();  // Fetches product data from a JSON file
