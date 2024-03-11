@@ -27,7 +27,6 @@ header {
     background-color: white;
     grid-area: search;
     margin-right: 2rem;
-    position: relative;
 }
 
 .search-bar > input[type="search"] {
@@ -244,28 +243,6 @@ footer {
     background-color: #30416B;
     text-align: center;
     font-size: clamp(1rem, 3vw, 1.2rem);
-}
-
-#search-suggestions {
-    position: absolute;
-    display: none;
-    top: calc(100% + 5px);
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    border-radius: 25px;
-    background-color: #E6E8F5;
-    padding: 0.5rem 1rem;
-}
-
-#suggestions-list {
-    list-style: none;
-    line-height: 2rem;
-}
-
-#suggestions-list li:hover {
-    cursor: pointer;
-    background-color: #BDBDBD;
 }
 
 /*Following a mobile-first layout, the rules above are for mobile screens (Specifically 420px).
