@@ -1,12 +1,8 @@
-btnPopup.addEventListener("click", () => {
-  wrapper.classList.add("active-popup");
-});
-
-iconClose.addEventListener("click", () => {
-  wrapper.classList.remove("active-popup");
-});
-
 document.addEventListener("DOMContentLoaded", function () {
+
+  iconClose.addEventListener("click", () => {
+    window.location.href = "/Phase 1 (M.Reyad)/html/index.html";
+  });
 
   submitBtn.addEventListener("click", function (event) {
     //
@@ -15,22 +11,29 @@ document.addEventListener("DOMContentLoaded", function () {
     const username = userId.value;
     const password = passKey.value;
 
-    fetch("../json/users.json") // Fetch data from the "users.json" file using the fetch API.
+    fetch("/json/users.json") // Fetch data from the "users.json" file using the fetch API.
       .then((response) => response.json())  // Processes the response by converting it to JSON format.
       .then((users) => {
 
-        const matchedUser = users.find( // Find method to search through the array of users obtained from the JSON file
-          (user) => user.username === username && user.password === password
+        const matchedId = users.find(
+          (user) => user.username === username
         );
 
-        if (matchedUser) {
-          alert("Login successful!");
-          // You can redirect the user or perform additional actions here
+        const matchedKey = users.find(
+          (user) => user.password === password
+        );
+
+
+        if (!matchedId) {
+          idLabel.style.color = "red";
         } else {
-          alert("Invalid username or password. Please try again.");
+          idLabel.style.color = "green";
+        }
+        if (!matchedKey) {
+          passLabel.style.color = "red"
+        } else {
+          window.location.href = "/Phase 1 (M.Reyad)/html/index.html";
         }
       })
-
   });
-
 });

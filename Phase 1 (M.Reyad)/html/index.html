@@ -1,5 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Title>Al-Waha bookstore</Title>
+    <link rel="stylesheet" href="../css/index.css">
+    <!--Adding a favicon:-->
+    <link rel="icon" type="image/x-icon" href="../images/logo-no-background.png">
+    <!--Adding Bai Jamjuree font:-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f528beee3f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="page-grid">
+        <header>
+            <div class="header-container-1">
+                <form class="search-bar">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="search" placeholder="Search...">
+                </form>
+                <button class="login">
+                    <div class="login-icon">
+                        <i class="fa-solid fa-user"></i>
+                        <a style="color: white; text-decoration: none;" href="/login.html">Login</a>
+=======
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +50,11 @@
                 <div class="header-container-1">
                     <form class="search-bar">
                         <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        <input type="search" placeholder="Search...">
+                        <input type="search" id="search-form" placeholder="Enter key words..." autocomplete="off">
+                        <div id="search-suggestions">
+                            <ul id="suggestions-list">
+                            </ul>
+                        </div>
                     </form>
                     <button class="login">
                         <div class="login-icon">
@@ -35,11 +70,98 @@
                     </button>
                     <div class="logo-container">
                         <img src="../images/logo-no-background.png" alt="Al-Waha bookstore logo">
+>>>>>>> 983bed0a685a365aa72a6a55b392149ad40563a9
                     </div>
+                </button>
+                <button class="activity">
+                    <div class="activity-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>My activity</span>
+                    </div>
+                </button>
+                <div class="logo-container">
+                    <img src="../images/logo-no-background.png" alt="Al-Waha bookstore logo">
                 </div>
+<<<<<<< HEAD
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <a href="#">Home</a>
+                    <div class="separator">|</div>
+                    <a href="#">FAQ</a>
+                    <div class="separator">|</div>
+                    <a href="#">About us</a>
+                    <div class="separator">|</div>
+                    <a href="#">Reach us</a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="featured-section">
+                <h1>Dive into our collection today!</h1>
+                <button type="button">Explore now</button>
+                <div class="text-circle">
+                    <span>New books!</span>
+                </div>
+                <div class="books-container">
+                    <img src="../images/eloquent-javascript.jpg" alt="Eloquent JavaSctipt">
+                    <img src="../images/javascript-the-definitive-guide.jpeg" alt="JavaScript the definitive guide">
+                    <img src="../images/learning-web-design.png" alt="Learning web desgin">
+                    <img src="../images/programming-python.jpg" alt="Programming Python">
+                </div>
+            </section>
+            <section class="categories-section">
+                <h1>Common categories</h1>
+                <article class="category-1">
+                    <span><b>History books</b></span>
+                    <img src="../images/history.jpeg" alt="History books" width="275" height="175">
+                    <button type="button">Explore now</button>
+                </article>
+                <article class="category-2">
+                    <span><b>Academic books</b></span>
+                    <img src="../images/academic.jpg" alt="Academic books" width="275" height="170">
+                    <button type="button">Explore now</button>
+                </article>
+                <article class="category-3">
+                    <span><b>Science fiction books</b></span>
+                    <img src="../images/science-fiction.jpg" alt="Science fiction books" width="300" height="169">
+                    <button type="button">Explore now</button>
+                </article>
+            </section>
+            <section class="social-features-section">
+                <div class="social-icons">
+                    <a href="#" class="facebook-icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="x-icon">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#" class="youtube-icon">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+                <hr>
+                <div class="features">
+                    <i class="fa-solid fa-lock"></i>
+                    <p><b>Security</b><br>Shop securely with encrypted transactions and data protection.</p>
+                    <i class="fa-solid fa-truck"></i>
+                    <p><b>Fast delivery</b><br>Get your books in record time!</p>
+                    <i class="fa-solid fa-book"></i>
+                    <p><b>Extensive library</b><br>Explore diverse genres and titles for every reader.</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright &copy; 2024. Al-Waha Bookstore. All Rights Reserved.</p>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+=======
                 <nav>
                     <ul class="nav-menu">
-                        <a href="#">Home</a>
+                        <a href="index.html">Home</a>
                         <div class="separator">|</div>
                         <a href="#">FAQ</a>
                         <div class="separator">|</div>
@@ -76,8 +198,8 @@
                         <button type="button">Explore now</button>
                     </article>
                     <article class="category-3">
-                        <span><b>Science fiction books</b></span>
-                        <img src="../images/science-fiction.jpg" alt="Science fiction books" width="300" height="169">
+                        <span><b>Biography books</b></span>
+                        <img src="../images/biography.avif" alt="biography books" width="300" height="169">
                         <button type="button">Explore now</button>
                     </article>
                 </section>
@@ -108,6 +230,7 @@
                 <p>Copyright &copy; 2024. Al-Waha Bookstore. All Rights Reserved.</p>
             </footer>
         </div>
-        <script src="index.js"></script>
+        <script src="../js/index.js"></script>
     </body>
+>>>>>>> 983bed0a685a365aa72a6a55b392149ad40563a9
 </html>
