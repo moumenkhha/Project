@@ -60,7 +60,7 @@ const addToCart = (product_id) => {
         carts[positionThisProductInCart].quantity += 1; // Increase its quantity by 1
     }
     addCartToHTML();    // Display shopping cart to the screen
-    addCartToMemory();  // Saving data
+    addCartToMemory();  // Saving data on localStorage
 }
 const addCartToMemory = () => {
     localStorage.setItem('cart', JSON.stringify(carts));    //JSON.stringify because Local storage does not store as arrays, so converting to json
@@ -146,4 +146,4 @@ const initApp = () => {
 
         })
 }
-initApp();
+initApp();  // Fetches product data from a JSON file
