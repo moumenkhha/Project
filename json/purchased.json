@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Learn JS",
+        "price": "$20",
+        "Author": "Ahmad Khan",
+        "icon": ""
+    },
+    {
+        "name": "Learn HTML",
+        "price": "$20",
+        "Author": "Ahmad Khan",
+        "icon": ""
+    }
+]

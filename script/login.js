@@ -23,11 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
           idLabel.style.color = "red";
         } else {
           idLabel.style.color = "green";
-        }
-        if (!matchedKey) {
-          passLabel.style.color = "red";
-        } else {
-          window.location.href = "/Phase 1 (M.Reyad)/html/index.html";
+
+          if (!matchedKey) {
+            passLabel.style.color = "red";
+          } else {
+            window.location.href = "/Phase 1 (M.Reyad)/html/index.html";
+          }
         }
       })
 
