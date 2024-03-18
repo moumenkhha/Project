@@ -9,7 +9,8 @@
         "description": "matlab programming for biomedical engineers and scientists provides an easy-to-learn introduction to the fundamentals of computer programming in matlab. this book explains the principles of good programming practice, while demonstrating how to write efficient and robust code that analyzes and visualizes biomedical data. aimed at the biomedical engineer, biomedical scientist, and medical researcher with little or no computer programming experience, it is an excellent resource for learning the principles and practice of computer programming using matlab. this book enables the reader to: analyze problems and apply structured design methods to produce elegant, efficient and well-structuredïå½program designsimplement a structured program design in matlab, making good use of incremental development approacheswrite code that makes good use of matlab programming features, including control structures, functions and advanced data typeswrite matlab code to read in medical data from files and write data to fileswrite matlab code that is efficient and robust to errors in input datawrite matlab code to analyze and visualize medical data, including imaging data.",
         "cover-image": "matlab-programming-for-biomedical-engineers-and-scientists.jpg",
         "price": 250,
-        "keywords": ["matlab", "programming", "biomedical", "engineer", "scientist"]
+        "keywords": ["matlab", "programming", "biomedical", "engineer", "scientist"],
+        "quantity": 41
     },
     {
         "title": "java design patterns",
@@ -21,7 +22,8 @@
         "description": "learn how to implement design patterns in java: each pattern in java design patterns is a complete implementation and the output is generated using eclipse, making the code accessible to all. the examples are chosen so you will be able to absorb the core concepts easily and quickly. this book presents the topic of design patterns in java in such a way that anyone can grasp the idea. by giving easy to follow examples, you will understand the concepts with increasing depth. the examples presented are straightforward and the topic is presented in a concise manner.",
         "cover-image": "java-design-patterns.jpg",
         "price": 189,
-        "keywords": ["java", "design", "pattern", "code"]
+        "keywords": ["java", "design", "pattern", "code"],
+        "quantity": 53
     },
     {
         "title": "programming in two semesters using python and java",
@@ -33,7 +35,8 @@
         "description": "this highly accessible textbook teaches programming from first principles. in common with many programming courses, it uses python as the introductory programming language before going on to use java as the vehicle for more advanced programming concepts. the first part, which teaches python, covers fundamental programming concepts, such as data types and control structures and functions. it introduces more complex data types such as lists and dictionaries and also deals with file handling. it introduces object-oriented concepts and ends with a case study bringing together all the topics of the first semester.  the second part uses java to teach advanced concepts and centres around object-oriented programming, teaching key object-oriented concepts such as inheritance and polymorphism.  the semester again ends with an advanced case study bringing together all the topics of the second semester.",
         "cover-image": "programming-in-two-semesters-using-python-and-java.jpg",
         "price": 320,
-        "keywords": ["programming", "python", "java", "programming language"]
+        "keywords": ["programming", "python", "java", "programming language"],
+        "quantity": 12
     },
     {
         "title": "javascript object programming",
@@ -45,7 +48,8 @@
         "description": "this brief  book explains the advantages of the object model, inheritance, both classical and prototypical, and shows how these concepts can be implemented in javascript. it also shows how object programming (op) opens a new world of design possibilities that go far beyond inheritance.",
         "cover-image": "javascript-object-programming.jpg",
         "price": 99,
-        "keywords": ["javascript", "programming", "oo", "web development", "constructor"]
+        "keywords": ["javascript", "programming", "oo", "web development", "constructor"],
+        "quantity": 65
     },
     {
         "title": "css for windows 8 app development",
@@ -57,7 +61,8 @@
         "description": "css for windows 8 app development is your learning guide for css – the language of great windows 8-style apps. learn the built-in styles that make the built-in controls shine, how to define them, and how to use css to give your custom app assets that beautiful modern ui style. css (cascading style sheets) is the clear standard for styling web applications, and with html, css, and javascript now powering apps on windows 8, it’s the clear standard there as well. css is a powerful styling and layout language that greatly simplifies the selection of page elements and their visual display, layout, and animation. additionally, windows 8 apps appear on a large variety of screen formats, and css is the primary means for uniquely defining these layouts.",
         "cover-image": "css-for-windows-8-app-development.jpg",
         "price": 360,
-        "keywords": ["css", "app development", "windows", "styling", "html"]
+        "keywords": ["css", "app development", "windows", "styling", "html"],
+        "quantity": 21
     },
     {
         "title": "essential software architecture",
@@ -69,7 +74,8 @@
         "description": "job titles like “technical architect” and “chief architect” nowadays abound in software industry, yet many people suspect that “architecture” is one of the most overused and least understood terms in professional software development. gorton’s book tries to resolve this dilemma. it concisely describes the essential elements of knowledge and key skills required to be a software architect. the explanations encompass the essentials of architecture thinking, practices, and supporting technologies.",
         "cover-image": "essentail-software-architecture.jpg",
         "price": 167,
-        "keywords": ["software architecture", "software quality", "semantic web"]
+        "keywords": ["software architecture", "software quality", "semantic web"],
+        "quantity": 74
     },
     {
         "title": "expert oracle database architecture",
@@ -81,7 +87,8 @@
         "description": "this is a defining book on the oracle database for any developer or database administrator who works with oracle-driven database applications. tom kyte has a simple philosophy: you can treat oracle as a black box and just stick data into it or you can understand how it works and exploit it as a powerful computing environment. if you choose the latter, then you will find that there are few information management problems that you cannot solve quickly and elegantly.",
         "cover-image": "expert-oracle-database-architecture.jpg",
         "price": 243,
-        "keywords": ["oracle", "software", "sql", "development", "design", "data structure"]
+        "keywords": ["oracle", "software", "sql", "development", "design", "data structure"],
+        "quantity": 124
     },
     {
         "title": "yugoslavia: a concise history",
@@ -93,7 +100,8 @@
         "description": "yugoslavia: a concise history surveys the whole turbulent course of the country's history, in the context of the struggles between great powers for control of the balkans. torn apart by nationalist rivalries, the first yugoslavia lapsed into paralysis and dictatorship. axis occupation in 1941 unleashed a murderous civil war, in which the communist party emerged victorious. tito's yugoslavia appeared to the world as a peaceful, multi-national federation, but in the end disintegrated amid barbarism unknown in europe for half a century. this revised and fully updated edition explains why, and takes the events up to the arrest of milosevic in 2001and beyond.",
         "cover-image": "yugoslavia-a-concise-history.jpg",
         "price": 78,
-        "keywords": ["chronology", "civil war", "communism", "revolution", "history", "europe"]
+        "keywords": ["chronology", "civil war", "communism", "revolution", "history", "europe"],
+        "quantity": 48
     },
     {
         "title": "modern philosophy of history",
@@ -105,7 +113,8 @@
         "description": "no description available",
         "cover-image": "modern-philosophy-of-history.jpg",
         "price": 125,
-        "keywords": ["twelfth century", "historic future"]
+        "keywords": ["twelfth century", "historic future"],
+        "quantity": 38
     },
     {
         "title": "a post-exceptionalist perspective on early american history",
@@ -117,7 +126,8 @@
         "description": "this book argues that early american history is best understood as the story of a settler-colonial supplanting society—a society intent on a vast land grab of american indian space and driven by a logic of elimination and a genocidal imperative to rid the new white settler living space of its existing indigenous inhabitants. challenging the still strongly held notion of american history as somehow exceptional or unique, it locates the history of the united states and its colonial antecedents as a central part of—rather than an exception to—the emerging global histories of imperialism, colonialism, and genocide. it also explores early american history in an imperial, transnational, and global frame, showing how the precedent of the north american west and its colonial trope of indian wars were used by like-minded american and european expansionists to inspire and legitimate other imperial-colonial adventures from the late-nineteenth through the mid-twentieth centuries.",
         "cover-image": "a-post-exceptionalist-perspective-on-early-american-history.jpg",
         "price": 42,
-        "keywords": ["national history", "native american history", "american indian wars", "history of western civilization"]
+        "keywords": ["national history", "native american history", "american indian wars", "history of western civilization"],
+        "quantity": 9
     },
     {
         "title": "the role of migration in the history of the eurasian steppey",
@@ -129,7 +139,8 @@
         "description": "throughout their entire history, the sedentary civilizations of china and europe had to deal with nomads and barbarians. this unique volume explores their drastically different responses: china 'chose' containment while europe 'chose' expansion. migration played a crucial role in this interaction. issuing from two population centers, the sedentary one in the west and the nomadic one in the east, two powerful population streams confronted each other in the eurasian steppe. this confrontation was a crucial factor in determining patterns of eurasian history - it destroyed existing states, created new ones, and drastically changed the balance of power. even today, while russian populations in asia contract, the population pressures in china and central asia continue to build and are likely to spill over across the border. this book shows how we are witnessing the beginning of a new cycle of the age-old contest.",
         "cover-image": "the-role-of-migration-in-the-history-of-the-eurasian-steppey.jpg",
         "price": 58,
-        "keywords": ["asian history", "europe", "china", "history of western civilization", "migration"]
+        "keywords": ["asian history", "europe", "china", "history of western civilization", "migration"],
+        "quantity": 69
     },
     {
         "title": "atlantic history in the nineteenth century",
@@ -141,7 +152,8 @@
         "description": "this book argues that a vibrant, ever-changing atlantic community persisted into the nineteenth century. as in the early modern atlantic world, nineteenth-century interactions between the americas, africa, and europe centered on exchange: exchange of people, commodities, and ideas. from 1789 to 1914, new means of transportation and communication allowed revolutionaries, migrants, merchants, settlers, and tourists to crisscross the ocean, share their experiences, and spread knowledge. extending the conventional chronology of atlantic world history up to the start of the first world war, niels eichhorn uncovers the complex dynamics of transition and transformation that marked the nineteenth-century atlantic world.",
         "cover-image": "atlantic-history-in-the-nineteenth-century.jpg",
         "price": 79,
-        "keywords": ["atlantic history", "nineteenth century history", "atlantic studies", "nationalism"]
+        "keywords": ["atlantic history", "nineteenth century history", "atlantic studies", "nationalism"],
+        "quantity": 27
     },
     {
         "title": "an intellectual history of the caribbean",
@@ -153,7 +165,8 @@
         "description": "this is first intellectual history of the caribbean written by a top caribbean studies scholar. the book examines both the work of natives of the region as well as texts interpretive of the region produced by western authors. stressing the experimental and cultural particularity of the caribbean, the study considers major questions in the field.",
         "cover-image": "an-intellectual-history-of-the-caribbean.jpg",
         "price": 187,
-        "keywords": ["caribbean", "intellectual history", "migration"]
+        "keywords": ["caribbean", "intellectual history", "migration"],
+        "quantity": 73
     },
     {
         "title": "a history of japan from stone age to superpower",
@@ -165,7 +178,8 @@
         "description": "in a rare combination of comprehensive coverage and sustained critical focus, this book examines japanese history in its entirety to identify the factors underlying the nation's progression to superpower status. japan's achievement is explained not merely in economic terms, but at a more fundamental level, as a product of historical patterns of response to circumstance. japan is shown to be a nation historically impelled by a pragmatic determination to succeed. the book also highlights unresolved questions and little-known facts.",
         "cover-image": "a-history-of-japan-from-stone-age-to-superpower.jpg",
         "price": 243,
-        "keywords": ["japan", "medieval history", "middle ages", "stone age"]
+        "keywords": ["japan", "medieval history", "middle ages", "stone age"],
+        "quantity": 52
     },
     {
         "title": "Science Fiction: Ten Explorations",
@@ -177,6 +191,7 @@
         "description": "in a rare combination of comprehensive coverage and sustained critical focus, this book examines japanese history in its entirety to identify the factors underlying the nation's progression to superpower status. japan's achievement is explained not merely in economic terms, but at a more fundamental level, as a product of historical patterns of response to circumstance. japan is shown to be a nation historically impelled by a pragmatic determination to succeed. the book also highlights unresolved questions and little-known facts.",
         "cover-image": "a-history-of-japan-from-stone-age-to-superpower.jpg",
         "price": 243,
-        "keywords": ["japan", "medieval history", "middle ages", "stone age"]
+        "keywords": ["japan", "medieval history", "middle ages", "stone age"],
+        "quantity": 24
     }
 ]
