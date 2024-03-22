@@ -31,7 +31,7 @@ async function searchBooks() {
             })
         })
 
-        if (score > 0) {
+        if (score > 0 && matchedBooks.length < 10) {
             matchedBooks.push({b, score});
         }
     });
@@ -52,6 +52,10 @@ function showMatchedBooks(books) {
             bookItem.appendChild(titleText);
             suggestions.appendChild(bookItem);
         })
+        const titlesList = document.querySelectorAll("#suggestions-list > li");
+        for (let i = 0; i < titlesList.length; i++) {
+            titlesList[i].addEventListener("mouseover", () => autoCompleteSearch(titlesList[i].innerText));
+        }
     }
     else {
         const resultMessage = document.createElement("li");
@@ -63,6 +67,10 @@ function showMatchedBooks(books) {
 
 function hideSearchSuggestions() {
     document.querySelector("#search-suggestions").style.display = "none";
+}
+
+function autoCompleteSearch(title) {
+    document.querySelector("#search-form").value = title;
 }
 
 // Adding event listeners:
