@@ -49,9 +49,12 @@ function showMatchedBooks(books) {
         books.forEach(b => {
             const bookItem = document.createElement("li");
             const titleText = document.createTextNode(b.title);
+            titleText.value = b.title;
+
             bookItem.appendChild(titleText);
             suggestions.appendChild(bookItem);
-        })
+        });
+
         const titlesList = document.querySelectorAll("#suggestions-list > li");
         for (let i = 0; i < titlesList.length; i++) {
             titlesList[i].addEventListener("mouseover", () => autoCompleteSearch(titlesList[i].innerText));
