@@ -19,6 +19,8 @@ function logginTrigger(){
   const userData = JSON.parse(localStorage.getItem("userData"));
   if(userData) {
     localStorage.removeItem("userData");
+    window.location.href = "/Phase 1 (M.Reyad)/html/index.html";
+    alert("Signing out successfully");
     checkUserStatus();
   } else {
     window.location.href = "/login.html";
@@ -61,4 +63,13 @@ function submitLogin(e) {
 
 document.addEventListener("DOMContentLoaded", function () {
   checkUserStatus();
+
+  const myActivity = document.querySelector("#myActivityBtn");
+  myActivity.addEventListener("click", () => {
+    if (localStorage.userData) {
+      window.location.href = "/myActivity.html";
+    }
+  })
+
+
   });
