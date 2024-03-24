@@ -1,0 +1,31 @@
+.bookInfoDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookInfoDiv img {
+    width: 300px
+}
+
+.bookInfoDiv td {
+    border: 1px solid;
+    padding: 20px;
+}
+
+.bookInfoDiv table {
+    border-collapse: collapse;
+    margin: 60px;
+}
+
+.purchaseBtn{
+    padding: 20px;
+    margin: 0 50% 15% 50%;
+    width: max-content;
+    background-color: #2c397f;
+    border-radius: 10px;
+    font-size: larger;
+    cursor: pointer;
+    color: white;
+}
+
