@@ -1,7 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const searchInput = document.querySelector("#search-form");
 
-    searchInput.addEventListener("change", () => {
-        const inputValue = searchInput.TEXT_NODE;
+    const searchBar = document.querySelector("#search-form");
+
+    searchBar.addEventListener("change", () => {
+        const booksAvailable = document.querySelectorAll("li");
+
+        booksAvailable.forEach(book => {
+            console.log(book);
+        });
     });
+
 });
+
+
+
+
+
+// booksAvailable.addEventListener("change", () => {
+//     console.log(booksAvailable);
+// });
+
