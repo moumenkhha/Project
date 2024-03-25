@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 `;
         const addToCartBtn = document.createElement("button");
         addToCartBtn.textContent = "Add to Cart";
-        addToCartBtn.classList.add("purchaseBtn");
+        addToCartBtn.classList.add("addToCartBtn");
         mainPageMainTag.append(bookInfoDiv, addToCartBtn);
 
         addToCartBtn.addEventListener("click", () => {
@@ -149,10 +149,19 @@ document.addEventListener("DOMContentLoaded", async () => {
             desiredBook.quantity -= quantity;   // Return to fix
             userData.balance -= totalPrice;
             localStorage.setItem("userData", JSON.stringify(userData));
+
+            const userHistory = [{
+                Date: new Date(),
+                Booktitle: desiredBook.title,
+                Quantity: quantity,
+                Price: totalPrice,
+            }];
+
+            console.log(history);
+
             alert("Order Confirmed. Redirecting to Main");
             window.location.href = "/Phase 1 (M.Reyad)/html/index.html";
         };
     };
-
 
 });

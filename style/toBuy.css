@@ -19,9 +19,9 @@
     margin: 60px;
 }
 
-.purchaseBtn, .confirmBtn, .cancelBtn {
+.addToCartBtn, .confirmBtn, .cancelBtn {
     padding: 20px;
-    margin: 5% 50% 15% 50%;
+    margin: 5% auto;
     width: max-content;
     background-color: #3f51b5;
     border-radius: 10px;
@@ -35,6 +35,12 @@
     border: none;
 }
 
+.addToCartBtn {
+    /* position: absolute; */
+    /* left: 50%;
+    transform: translateX(-50%); */
+}
+
 
 
 
@@ -45,11 +51,12 @@
     border-radius: 20px;
     padding: 10px;
     font-size: larger;
+    margin-bottom: 20px;
 }
 
 .checkOut input {
     padding: 5px;
     margin: 10px;
-    width: 500px;
+    width: 400px;
     font-size: larger;
 }
