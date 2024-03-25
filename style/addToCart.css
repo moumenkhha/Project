@@ -84,6 +84,7 @@ body.showCart .cartTab {
 body.showCart .container {
     transform: translateX(-250px); /*Move when cartTab appears*/
 }
+
 .cartTab {
     width: 400px;
     background-color: #353432;
