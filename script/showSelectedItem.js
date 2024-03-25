@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     const searchBar = document.querySelector("#search-form");
     const mainPageMainTag = document.querySelector("#mainPageMainTag");
 
+    let desiredBook;
+
     if (searchBar) {
         searchBar.addEventListener("change", () => {
             const booksAvailable = document.querySelectorAll("li");
@@ -20,7 +22,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     };
 
     function addToHTML(bookName) {
-        const desiredBook = books.find(book => book.title === bookName);
+        desiredBook = books.find(book => book.title === bookName);
 
 
         localStorage.setItem("bookData", JSON.stringify(desiredBook));
@@ -50,10 +52,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         <td>price</td>
         <td>${desiredBook.price} QR</td>
     </tr>
-    <tr>
-        <td>Quantity Available</td>
-        <td>${desiredBook.quantity}</td>
-    </tr>
+     <!-- <tr>
+         <td>Quantity Available</td>
+         <td id="QAinTable">${desiredBook.quantity}</td>
+     </tr> -->
 </table>
 `;
         const addToCartBtn = document.createElement("button");
@@ -73,7 +75,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 
                 cancelBtn.addEventListener("click", () => {
-                    alert("Cancelled successfully. You will be redirected to Main Page");
+                    alert("Cancelled successfully. Redirected to Main");
                     window.location.href = "/Phase 1 (M.Reyad)/html/index.html";
                 });
             } else {
@@ -124,15 +126,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         quantityInput.addEventListener("input", () => {
             const pricePerBook = JSON.parse(localStorage.getItem("bookData")).price;
-            const quantity = quantityInput.value;
-            const totalPrice = pricePerBook * quantity;
 
-            totalPriceInput.value = totalPrice;
+            totalPriceInput.value = pricePerBook * quantityInput.value;
 
         });
 
         confirmBtn.addEventListener("click", () => {
-            purchaseCheck(totalPriceInput.value, quantity);
+            purchaseCheck(totalPriceInput.value, quantityInput.value);
         });
         return checkOut;
     };
@@ -140,18 +140,19 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     function purchaseCheck(totalPrice, quantity) {
         const userData = JSON.parse(localStorage.getItem("userData"));
-        console.log("Before", userData.balance);
 
         if (userData.balance < totalPrice) {
             alert("You don't have enough balance");
+        } else if (quantity > desiredBook.quantity) {
+            alert("No enough quantity");
         } else {
-            desiredBook.quantity -= quantity;
+            desiredBook.quantity -= quantity;   // Return to fix
             userData.balance -= totalPrice;
             localStorage.setItem("userData", JSON.stringify(userData));
-            alert("Order Confirmed");
-
-            console.log("New Balance: ", userData.balance);
+            alert("Order Confirmed. Redirecting to Main");
+            window.location.href = "/Phase 1 (M.Reyad)/html/index.html";
         };
     };
+
 
 });
