@@ -4,13 +4,13 @@
         "surname": "Alhasani",
         "username": "ma1910156",
         "password": "ma1910156",
-        "money-balance": 100
+        "balance": 100
     },
     {
         "name": "Moumen",
         "surname": "Alhasani",
         "username": "a",
         "password": "a",
-        "money-balance": 100
+        "balance": 1000
     }
 ]

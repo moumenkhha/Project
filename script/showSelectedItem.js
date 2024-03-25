@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const response = await fetch("/Phase 1 (M.Reyad)/json/items.json");
     const books = await response.json();
 
-
     const searchBar = document.querySelector("#search-form");
     const mainPageMainTag = document.querySelector("#mainPageMainTag");
 
@@ -22,6 +21,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     function addToHTML(bookName) {
         const desiredBook = books.find(book => book.title === bookName);
+
 
         localStorage.setItem("bookData", JSON.stringify(desiredBook));
 
@@ -66,14 +66,11 @@ document.addEventListener("DOMContentLoaded", async () => {
                 addToCartBtn.remove();
                 bookInfoDiv.append(purchaseDetails());
 
-                // console.log(userQuantity.value);
 
                 const cancelBtn = document.querySelector(".cancelBtn");
                 const confirmBtn = document.querySelector(".confirmBtn");
 
-                confirmBtn.addEventListener("click", () => {
-                    purchaseCheck();
-                });
+
 
                 cancelBtn.addEventListener("click", () => {
                     alert("Cancelled successfully. You will be redirected to Main Page");
@@ -123,6 +120,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         const quantityInput = checkOut.querySelector("#userQuantity");
         const totalPriceInput = checkOut.querySelector("#totalPrice");
+        const confirmBtn = checkOut.querySelector(".confirmBtn");
 
         quantityInput.addEventListener("input", () => {
             const pricePerBook = JSON.parse(localStorage.getItem("bookData")).price;
@@ -131,16 +129,29 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             totalPriceInput.value = totalPrice;
 
+        });
 
+        confirmBtn.addEventListener("click", () => {
+            purchaseCheck(totalPriceInput.value, quantity);
         });
         return checkOut;
     };
-    // const userQuantity = document.querySelector("#quantity");
-    // const price = document.querySelector("#price");
 
-    function purchaseCheck() {
+
+    function purchaseCheck(totalPrice, quantity) {
         const userData = JSON.parse(localStorage.getItem("userData"));
-    };
+        console.log("Before", userData.balance);
 
+        if (userData.balance < totalPrice) {
+            alert("You don't have enough balance");
+        } else {
+            desiredBook.quantity -= quantity;
+            userData.balance -= totalPrice;
+            localStorage.setItem("userData", JSON.stringify(userData));
+            alert("Order Confirmed");
+
+            console.log("New Balance: ", userData.balance);
+        };
+    };
 
 });
