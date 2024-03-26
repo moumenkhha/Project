@@ -1,9 +1,9 @@
-function checkUserStatus(){
+function checkUserStatus() {
 
   const btn = document.querySelector("#loginBtn");
   const userData = JSON.parse(localStorage.getItem("userData"));
-  if(btn){
-    if(userData) {
+  if (btn) {
+    if (userData) {
       btn.textContent = `Sign Out`;
     } else {
       btn.textContent = "Login";
@@ -11,14 +11,14 @@ function checkUserStatus(){
   }
 }
 
-function closeClicked(){
+function closeClicked() {
   window.location.href = "/Phase 1 (M.Reyad)/html/index.html";
 }
 
-function logginTrigger(){
+function logginTrigger() {
   const userData = JSON.parse(localStorage.getItem("userData"));
-  if(userData) {
-    localStorage.removeItem("userData");
+  if (userData) {
+    localStorage.clear();
     window.location.href = "/Phase 1 (M.Reyad)/html/index.html";
     alert("Signing out successfully");
     checkUserStatus();
@@ -37,7 +37,7 @@ function submitLogin(e) {
     .then((users) => {
 
       const matchedId = users.find( // To search through the array of users obtained from the JSON file
-        (user) => user.username ===  username
+        (user) => user.username === username
       );
       const matchedKey = users.find(
         (user) => user.password === password
@@ -51,25 +51,16 @@ function submitLogin(e) {
         if (!matchedKey) {
           passLabel.style.color = "red";
         } else {
-          const {password, ...others} = matchedId;
+          const { password, ...others } = matchedId;
           localStorage.setItem("userData", JSON.stringify(others));
           window.location.href = "/Phase 1 (M.Reyad)/html/index.html";
         }
       }
     })
-    
+
 }
 
 
 document.addEventListener("DOMContentLoaded", function () {
   checkUserStatus();
-
-  const myActivity = document.querySelector("#myActivityBtn");
-  myActivity.addEventListener("click", () => {
-    if (localStorage.userData) {
-      window.location.href = "/myActivity.html";
-    }
-  })
-
-
-  });
+});

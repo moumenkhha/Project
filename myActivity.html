@@ -4,31 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purchase an Item</title>
+    <title>My Activity</title>
     <link rel="stylesheet" href="/Phase 1 (M.Reyad)/css/index.css">
+    <link rel="stylesheet" href="/style/myActivity.css">
 </head>
 
 <body>
     <header> <!-- From Riyad -->
         <div class="header-container-1">
-            <form class="search-bar">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                <input type="search" placeholder="Search...">
-            </form>
+
             <button class="login" onclick="logginTrigger()" id="loginBtn">
                 <div class="login-icon">
                     <i class="fa-solid fa-user"></i>
                     Login
                 </div>
-            </button>  
-            <button class="activity">
+            </button>
+            <button class="activity" id="myActivityBtn">
                 <div class="activity-icon">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <span>My activity</span>
+                    My Activity
                 </div>
             </button>
             <div class="logo-container">
-                <img src="/Phase 1 (M.Reyad)/images/logo-no-background.png" alt="Al-Waha bookstore logo">
+                <img id="logoImg" src="/Phase 1 (M.Reyad)/images/logo-no-background.png" alt="Al-Waha bookstore logo">
             </div>
         </div>
         <nav>
@@ -44,14 +42,12 @@
         </nav>
     </header>
 
-    <div class="container">
-        <div class="item">
-
-        </div>
+    <div class="actsContainer">
     </div>
 
 
     <script src="/script/login.js"></script>
+    <script src="/script/myActivity.js"></script>
 </body>
 
 </html>

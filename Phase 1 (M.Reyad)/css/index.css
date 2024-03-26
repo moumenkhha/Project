@@ -55,6 +55,7 @@ header {
 
 .logo-container > img {
     grid-area: logo;
+    cursor: pointer;
 }
 
 .login {
